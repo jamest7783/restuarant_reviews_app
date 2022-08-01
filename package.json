@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jamest7783/restuarant_reviews_app/issues"
   },
-  "homepage": "https://github.com/jamest7783/restuarant_reviews_app#readme"
+  "homepage": "https://github.com/jamest7783/restuarant_reviews_app#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
