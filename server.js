@@ -8,7 +8,7 @@ const app=express()
 app.use(express.static(`${__dirname}/client/build`))
 
 //simple tesing route
-app.get('/',(req,res)=>{
+app.get('/restuarants',(req,res)=>{
     res.send("I have hit the root route!")
 })
 
