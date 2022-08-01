@@ -1,4 +1,4 @@
-const {Restuarant}=require('../models')
+const {Restuarant}=require('../models/restuarant')
 
 const getAllRestuarants=async (req,res)=>{
     let restuarants = await Restuarant.find({})

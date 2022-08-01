@@ -4,7 +4,6 @@ const db = require('./db')
 const routes=require('./routes')
 
 const app=express()
-const {Restuarant}=require('./models')
  
 // MIDDLE WARE
 app.use(express.json())
@@ -13,7 +12,6 @@ app.use(express.static(`${__dirname}/client/build`))
 
 
 // ROUTES
-
 app.use('/api',routes)
 app.get('/*', (req, res) => {
     res.sendFile(`${__dirname}/client/build/index.html`)
