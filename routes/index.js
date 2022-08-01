@@ -1,9 +1,9 @@
 const {Router}=require('express')
-const controllers=require('../controllers')
+const { controllers, restuarants }=require('../controllers')
 const router=Router()
 
-router.get('/restuarants',controllers.getAllRestuarants)
-router.post('/restuarants',controllers.createRestuarant)
-router.get('/restuarants/:id',controllers.getOneRestuarant)
+router.get('/restuarants',restuarants.getAllRestuarants)
+router.post('/restuarants',restuarants.createRestuarant)
+router.get('/restuarants/:id',restuarants.getOneRestuarant)
 
 module.exports = router
