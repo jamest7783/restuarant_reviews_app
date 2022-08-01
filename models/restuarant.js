@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose')
 
-const restuarant = new Schema(
+const restuarantSchema = new Schema(
     {
     name: { type:String, require:true},
     location: {type:String, required:true},
