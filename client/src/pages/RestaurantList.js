@@ -1,9 +1,21 @@
-const RestaurantList=()=>{
+import RestaurantCard from "../components/RestaurantCard"
+
+
+
+const RestaurantList=({restaurants})=>{
 
     return (
-        <div>
+        <section className='page' id='restaurant-list'> 
+            <h3>Restaurants</h3>
+            <div className="flex">
 
-        </div>
+                {
+                    restaurants.map((restaurant)=>(
+                        <RestaurantCard restaurant={restaurant}/>
+                ))}
+
+            </div>
+        </section>
     )
 }
 
