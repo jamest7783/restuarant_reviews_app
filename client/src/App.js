@@ -6,10 +6,32 @@ import ReviewDetails from './pages/RestaurantDetails'
 import RestaurantDetails from './pages/RestaurantDetails'
 import ReviewForm from './pages/ReviewForm'
 import {Routes,Route} from 'react-router-dom'
+import {useState,useEffect} from 'react'
 import './App.css';
+import axios from 'axios'
+import {BASE_URL} from './globals'
 
 
 const App=()=>{
+  const [restaurants,setRestaurants]=useState([])
+
+  useEffect(()=>{
+    const getRestaurants=async ()=>{
+      const res=await axios.get(`${BASE_URL}/api/restaurants`)
+      setRestaurants(res.data)
+    }
+    getRestaurants()
+  },[])
+
+
+
+
+
+
+
+
+
+
   return (
 
     <div>
